@@ -12,15 +12,17 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack(alignment:.center) {
-                NavigationLink(destination: FlipPages()) {
-                    Image(uiImage: UIImage(named: "KomotiniStart")!).overlay {
+                Image(uiImage: UIImage(named: "KomotiniStart")!).edgesIgnoringSafeArea(.all).overlay {
+                    NavigationLink {
+                        FlipPages()
+                    } label: {
                         Text("Start FlipBook")
                             .padding()
-                            .font(.system(size: 30))
                             .foregroundColor(.white)
+                            .font(.system(size: 30))
                     }
-                }.navigationBarTitle("Komotini Flipbook", displayMode: .inline)
-            }
+                }
+            }.navigationTitle("Komotini FlipBook").navigationBarTitleDisplayMode(.inline)
         }.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height, alignment: .center)
 
       
