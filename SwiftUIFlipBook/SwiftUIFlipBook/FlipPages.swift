@@ -15,7 +15,6 @@ struct FlipPages: View {
             Image(uiImage: UIImage(named: "komotini12")!)
             Image(uiImage: UIImage(named: "Komotini13")!)
             Image(uiImage: UIImage(named: "Komotini14")!)
-            
         }
     }
 }

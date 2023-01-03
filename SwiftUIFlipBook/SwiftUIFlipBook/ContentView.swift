@@ -24,6 +24,7 @@ struct ContentView: View {
                 }
             }.navigationTitle("Komotini FlipBook").navigationBarTitleDisplayMode(.inline)
         }.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height, alignment: .center)
+            
 
       
     }
